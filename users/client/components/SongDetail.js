@@ -12,7 +12,8 @@ class SongDetail extends Component {
         return (<div>Loading...</div>); 
     }
       return (
-          <div>              
+          <div>   
+              <Link to="/">Back</Link>           
               <h3>{song.title}</h3>             
           </div>
       )
