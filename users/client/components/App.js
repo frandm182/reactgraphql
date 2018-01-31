@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import gql from 'graphql-tag';
-import { graphql } from 'react-apollo';
+import React from 'react';
 
 export default ({ children }) => {
-    return <div className="container">{children}</div>
+    return (<div className="container">{children}</div>);
 }
