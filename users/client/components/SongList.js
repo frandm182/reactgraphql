@@ -11,7 +11,8 @@ class SongList extends Component {
         this.props.mutate({ 
             variables: {
                 id
-        }
+        },
+        refetchQueries: [ { query }]
     })
 
     }
