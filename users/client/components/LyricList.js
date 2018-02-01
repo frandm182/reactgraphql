@@ -15,11 +15,13 @@ class LyricList extends Component {
             return(
                 <li key={id} className="collection-item">
                     {content}
-                    <i className="material-icons"
-                        onClick={() => this.onLike(id)}>
-                        thumb_up
-                    </i>
-                    {likes}
+                    <div className="vote-box">
+                        <i className="material-icons"
+                            onClick={() => this.onLike(id)}>
+                            thumb_up
+                        </i>
+                        {likes}
+                    </div>
                 </li>
             )
         })
